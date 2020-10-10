@@ -1,0 +1,19 @@
+.element__icon {
+    width: 20px;
+    height: 18px;
+    margin: 0;
+    margin-left: 26px;
+    background-image: url(../../../images/Vector.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    display: block;
+    background-size: contain;
+}
+
+.element__icon:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesto</title>
+    <link rel="stylesheet" href="pages/index.css">
+</head>
+<body class="root"> <!-- Здравствуйте. Переделал некторые места с прошлой отправки т.к. нет времени проверять свои гипотизы -->
+    <section class="header">
+        <img src="./images/Mestro.svg" alt='Логотип' class="header__logo">        
+    </section> 
+    <section class="profile">
+        <img src="./images/profile.jpg" alt="Профиль" class="profile__avatar">
+        <div class="profile__info">
+            <div class="profile__wrapper">
+                <p class="profile__info-name">Жак-Ив Кусто</p>
+                <button type="button" class="profile__add-button"></button>                
+            </div>
+            <p class="profile__info-text">Исследователь океана</p>
+        </div>
+        <button class="profile__button"></button>
+    </section>
+    <main class="elements">
+        <div class="element"> <!-- Если убрать ограничение высоты на текст (что правильно), то нужно увеличить длину самого Element, ибо там(в тексте) line-height: 29px;. Я не знаю как это можно проверять по размера из Фигмы. Прошу отнестись с пониманием т.к. работа заточена для проверки JS -->
+            <img src="./images/1.jpg" alt="Карачаевск" class="element__image">
+            <div class="element__box">
+                <p class="element__paragraph">Карачаевск</p>                
+                <button class="element__icon"></button> <!--Учитывая проблемы в размерах в Фигме, я на всякий случай переделал "сердце" под кнопку и добавил ховер. В Фигме об этом ничего не сказано, но пускай будет -->
+            </div>
+        </div>
+        <div class="element">
+            <img src="./images/2.jpg" alt="Гора Эльбрус" class="element__image">
+            <div class="element__box">
+                <p class="element__paragraph">Гора Эльбрус</p>
+                <button class="element__icon"></button>
+            </div>
+        </div>
+        <div class="element">
+            <img src="./images/3.jpg" alt="Домбай" class="element__image">
+            <div class="element__box">
+                <p class="element__paragraph">Домбай</p>
+                <button class="element__icon"></button>
+            </div>
+        </div>
+        <div class="element">
+            <img src="./images/2.jpg" alt="Гора Эльбрус" class="element__image">
+            <div class="element__box">
+                <p class="element__paragraph">Гора Эльбрус</p>
+                <button class="element__icon"></button>
+            </div>
+        </div>
+        <div class="element">
+            <img src="./images/3.jpg" alt="Домбай" class="element__image">
+            <div class="element__box">
+                <p class="element__paragraph">Домбай</p>
+                <button class="element__icon"></button>
+            </div>
+        </div>
+        <div class="element">
+            <img src="./images/1.jpg" alt="Карачаево-Черкасово" class="element__image">
+            <div class="element__box">
+                <p class="element__paragraph">Карачаево-Черкасово</p>
+                <button class="element__icon"></button>
+            </div>
+        </div> 
+    </main>
+    <footer class="footer">
+        <p class="footer__copyright">© 2020 Mesto Russia</p>
+    </footer>
+    <section class="popup"> <!-- В Фигме на 30px ошибка в размерах. Подобрал размеры под себя. -->
+        <div class="popup__container">
+            <button type="button" class="popup__close"></button>  <!-- В Фигме стоит размер 40px, но если поставить 40px, то очень большое визульное различие с макетом -->
+            <h2 class="popup__title">Редактировать профиль</h2>
+            <form class="popup__form">            
+                <input type="text" class="popup__name" placeholder="Жак-Ив Кусто">
+                <input type="text" class="popup__text" placeholder="Исследователь океана">
+                <button type="submit" class="popup__save">Сохранить</button>
+            </form>
+        </div>       
+    </section>
+    <script src="../mesto/script/index.js"></script>
+</body>
+</html>

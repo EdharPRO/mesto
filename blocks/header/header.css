@@ -1,0 +1,39 @@
+.header {
+    display: flex;
+    Height: 74px;
+    padding: 45px 0 0;
+    margin: 0 auto;
+    flex-direction: column;
+    align-content: flex-start;
+    border-bottom: 1px solid #545454;
+    width: 882px;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .header {
+        width: 753px;
+        padding: 40px 0 0;
+        margin:  0 auto;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .header {
+        width: 660px;
+        padding: 45px 0 0;
+        margin:  0 auto;
+    }
+}
+
+
+
+@media screen and (max-width: 660px) {
+    .header {
+        width: 320px;
+        margin: auto;        
+        height: 56px;
+        padding: 28px 0 0 0;
+    }
+}  
