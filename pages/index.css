@@ -9,7 +9,6 @@
         /* Header*/
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo/__logo.css);
-@import url(../blocks/header/__line/__line.css);
 
 
 /* Profile*/
@@ -19,7 +18,6 @@
 @import url(../blocks/profile/__info/__info-name/__info-name.css);
 @import url(../blocks/profile/__info/__info-text/__info-text.css);
 @import url(../blocks/profile/__info/__Edit-button/__Edit-button.css);
-@import url(../blocks/profile/__info/__add-img/__add-img.css);
 @import url(../blocks/profile/__button/button.css);
 @import url(../blocks/profile/__info/__wrapper/__wrapper.css);
 
