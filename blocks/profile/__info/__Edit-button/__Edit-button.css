@@ -1,4 +1,4 @@
-.profile__add-button {
+.profile__Edit-button {
     background-image: url(../../../../images/Vector__pen.png);
     width: 24px;
     height: 24px;
@@ -16,17 +16,17 @@
     
 
 
-.profile__add-button:hover {
+.profile__Edit-button:hover {
     opacity: 0.5;
     cursor: pointer;
 }
 
 @media screen and (max-width: 660px) {
-    .profile__add-button  {
+    .profile__Edit-button  {
         width: 18px;
         height: 18px;
         margin: 0;
-        margin-top: 20px;
+        margin-top: 8px;
     }
 }
 

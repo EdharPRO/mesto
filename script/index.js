@@ -1,18 +1,18 @@
-const Popprof = document.querySelector('.popup');
-const PopAddBtn = document.querySelector('.profile__add-button');
-const ProfInfoName = document.querySelector('.profile__info-name');
-const PopName = document.querySelector('.popup__name');
-const PopText = document.querySelector('.popup__text');
-const PopInfoText = document.querySelector('.profile__info-text');
-const PopForm = document.querySelector('.popup__form');
-const PopBtnSave = document.querySelector('.popup__save');
-const PopBtnClose = document.querySelectorAll('.popup__close');
+let Popprof = document.querySelector('.popup__profile');
+let PopAddBtn = document.querySelector('.profile__Edit-button');
+let ProfInfoName = document.querySelector('.profile__info-name');
+let PopName = document.querySelector('.popup__name');
+let PopText = document.querySelector('.popup__text');
+let PopInfoText = document.querySelector('.profile__info-text');
+let PopForm = document.querySelector('.popup__form');
+let PopBtnSave = document.querySelector('.popup__save');
+let PopBtnClose = document.querySelectorAll('.popup__close');
 
-const openPopup = mod => {
+let openPopup = mod => {
   mod.classList.add('popup_open');
 }
 
-const closePopup = mod => {
+let closePopup = mod => {
   mod.classList.remove('popup_open');
 } 
 
@@ -36,8 +36,7 @@ function handleFormSubmit (evt) {
     PopText.value ='';    
 } 
 
-PopForm.addEventListener('submit', handleFormSubmit); 
-
+PopForm.addEventListener('submit', handleFormSubmit);
 
 
 

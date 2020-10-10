@@ -5,8 +5,8 @@
     margin: 0 auto;
     flex-direction: column;
     align-content: flex-start;
-    border-bottom: 1px solid #545454;
     width: 882px;
+    border-bottom: 1px solid #545454;
 }
 
 

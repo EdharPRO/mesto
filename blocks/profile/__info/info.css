@@ -1,14 +1,12 @@
 .profile__info {
-    width: 336px;
-    height: 77px;
-    margin: 18px 0 25px 30px;
+    max-width: 336px;
+    margin: 18px 0 8px 30px;
 }
 
 @media screen and (max-width: 660px) {
     .profile__info {
         margin: 0;
         width: 280px;
-        height: 66px;
         margin-bottom: 36px;
     }
 }
