@@ -1,8 +1,7 @@
 .footer {
     margin: auto;
     color: white;
-    padding: 66px 763px 60px 199px;
-    Height: 18px;    
+    padding: 66px 763px 60px 199px;       
 }
 
 
@@ -32,9 +31,7 @@
 
 @media screen and (max-width: 660px) {
     .footer {
-        
         padding: 48px 19px 36px;
         width: 282px;
-        height: 14px;
     }    
 }

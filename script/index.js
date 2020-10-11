@@ -1,17 +1,20 @@
+const PopAddBtn = document.querySelector('.profile__Edit-button')
 const Popprof = document.querySelector('.popup');
-const PopAddBtn = document.querySelector('.profile__Edit-button');
+const PopBtnClose = document.querySelectorAll('.popup__close');
+const PopForm = document.querySelector('.popup__form');
+
 const ProfInfoName = document.querySelector('.profile__info-name');
+const PopInfoText = document.querySelector('.profile__info-text');
 const PopName = document.querySelector('.popup__name');
 const PopText = document.querySelector('.popup__text');
-const PopInfoText = document.querySelector('.profile__info-text');
-const PopForm = document.querySelector('.popup__form');
+
+
 const PopBtnSave = document.querySelector('.popup__save');
-const PopBtnClose = document.querySelectorAll('.popup__close');
+
 
 const openPopup = mod => {
   mod.classList.add('popup_open');
 }
-
 
 
 PopAddBtn.addEventListener('click', () => {
@@ -38,4 +41,4 @@ PopForm.addEventListener('submit', handleFormSubmit);
 
 const closePopup = mod => {
   mod.classList.remove('popup_open');
-} 
+}
