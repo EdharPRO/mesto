@@ -1,6 +1,5 @@
 .profile__info-name {
     margin: 0;
-    max-width: 295px;
     
     font-family: 'Inter';
     font-weight: 500;
@@ -15,11 +14,10 @@
 }
 
 @media screen and (max-width: 660px) {
-    .profile__infoname {
+    .profile__info-name {
         margin: 0;
         line-height: 32px;
         font-size: 27px;      
-        text-align: center;
-        width: 201px;
+        text-align: center;        
     }
 }

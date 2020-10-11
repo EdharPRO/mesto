@@ -1,5 +1,4 @@
-.profile__wrapper {
-    
+.profile__wrapper {    
     display: flex;
     flex-direction: row;
     max-width: 336px;
@@ -9,8 +8,7 @@
     .profile__wrapper {
         max-width: 280px;
         margin-left: 29px;
-        margin-right: 31px;
-        
+        margin-right: 31px;        
         display: flex;
         justify-content: space-between;
     }
