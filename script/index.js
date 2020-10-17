@@ -1,21 +1,21 @@
-let Popprof = document.querySelector('.popup');
-let PopAddBtn = document.querySelector('.profile__Edit-button');
+let PopProf = document.querySelector('.popup');
+let PopAddBtn = document.querySelector('.profile__edit-button');
 let ProfInfoName = document.querySelector('.profile__info-name');
-let PopName = Popprof.querySelector('.popup__name');
-let PopText = Popprof.querySelector('.popup__text');
+let PopName = PopProf.querySelector('.popup_input__name'); /* popup__name */
+let PopText = PopProf.querySelector('.popup_input__text'); /* popup__text */
 let PopInfoText = document.querySelector('.profile__info-text');
 let PopForm = document.querySelector('.popup__form');
-let PopBtnSave = Popprof.querySelector('.popup__save');
-let PopBtnClose = Popprof.querySelector('.popup__close');
+let PopBtnSave = PopProf.querySelector('.popup__save');
+let PopBtnClose = PopProf.querySelector('.popup__close');
 
 function openPopup() {
 PopName.value = ProfInfoName.textContent;
 PopText.value = PopInfoText.textContent;
-Popprof.classList.add('popup_open');
+PopProf.classList.add('popup_open');
 }
 
 function closePopup() {
-Popprof.classList.remove('popup_open');
+    PopProf.classList.remove('popup_open');
 }
 
 function handlePopupSubmit(event) {
@@ -28,3 +28,5 @@ closePopup();
 PopAddBtn.addEventListener('click', openPopup);
 PopBtnClose.addEventListener('click', closePopup);
 PopForm.addEventListener('submit', handlePopupSubmit);
+
+

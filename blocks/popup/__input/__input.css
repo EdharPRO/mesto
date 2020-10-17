@@ -1,5 +1,5 @@
-.popup__name {
-    margin: 0;
+.popup__input {
+    
     padding-top: 13px;
     padding-bottom: 13px;
     border: none;
@@ -10,4 +10,9 @@
     line-height: 17px;
     color: #000000;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
+
+.popup__input:first-child {
+    margin-top: 0;
 }

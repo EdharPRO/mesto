@@ -7,8 +7,7 @@
 
 @media screen and (max-width: 1150px) {
     .footer {
-        padding: 66px 283px 60px 150px;
-        
+        padding: 66px 283px 60px 150px;        
     }
 }
 
@@ -23,13 +22,13 @@
     .footer {
         width: 660px;
         padding: 66px 0 60px;
-        margin:  0 auto;
+        margin: 0;
     }
 }
 
 
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 674px) {
     .footer {
         padding: 48px 19px 36px;
         width: 282px;

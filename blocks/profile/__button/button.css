@@ -7,7 +7,7 @@
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 2px;
-    background-image: url(../../../images/Vector__plus.png);
+    background-image: url(../../../images/plus.svg);
     background-repeat: no-repeat;
     background-position: center;   
 }
@@ -17,7 +17,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 674px) {
     .profile__button {
         margin: 0;
         width: 280px;

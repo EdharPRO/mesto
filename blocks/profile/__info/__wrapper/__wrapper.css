@@ -4,7 +4,7 @@
     max-width: 336px;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 674px) {
     .profile__wrapper {
         max-width: 280px;
         margin-left: 29px;
