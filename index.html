@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="pages/index.css">
 </head>
 <body class="root"> 
-    <section class="header">
+    <header class="header">
         <img src="images/logo.svg" alt="logo" class="header__logo" >
-    </section>    
+    </header>    
     <main>
         <section class="profile">
             <img src="./images/profile.jpg" alt="Профиль" class="profile__avatar">
@@ -62,7 +62,7 @@
                 <img src="./images/1.jpg" alt="Карачаево-Черкасово" class="element__image">
                 <div class="element__box">
                     <h2 class="element__paragraph">Карачаево-Черкасово</h2>
-                    <button class="element__icon"></button>
+                    <button type="button" class="element__icon"></button>
                 </div>
             </div>
         </section>         
@@ -75,8 +75,8 @@
             <button type="button" class="popup__close"></button>
             <h2 class="popup__title">Редактировать профиль</h2>
             <form action="#" name="form" class="popup__form">            
-                <input type="text" name="PopName" class="popup__input popup_input__name" value="Жак-Ив Кусто">
-                <input type="text" name="PopText" class="popup__input popup_input__text" value="Исследователь океана">
+                <input type="text" name="PopName" class="popup__input popup__input_name" value="Жак-Ив Кусто">
+                <input type="text" name="PopText" class="popup__input popup__input_text" value="Исследователь океана">
                 <button type="submit" class="popup__save">Сохранить</button>
             </form>
         </div>
