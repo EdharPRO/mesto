@@ -1,32 +1,46 @@
-let popProf = document.querySelector('.popup');
+let popup = document.querySelector('.popup');
 let popAddBtn = document.querySelector('.profile__edit-button');
-let profInfoName = document.querySelector('.profile__info-name');
-let popName = popProf.querySelector('.popup__input_name');
-let popText = popProf.querySelector('.popup__input_text');
+let profInfoName  = document.querySelector('.profile__info-name');
+let popName = document.querySelector('.popup__input_name');
+let popText = document.querySelector('.popup__input_text');
 let popInfoText = document.querySelector('.profile__info-text');
 let popForm = document.querySelector('.popup__form');
-let popBtnSave = popProf.querySelector('.popup__save');
-let popBtnClose = popProf.querySelector('.popup__close');
+let popBtnClose = document.querySelectorAll('.popup__close');
+let popBtnElement = document.querySelector('.profile__button');
+let popProf = document.querySelector('.popup__add-prof');  
+let popElement = document.querySelector('.popup__element');
 
-function openPopup() {
-popName.value = profInfoName.textContent;
-popText.value = popInfoText.textContent;
-popProf.classList.add('popup_open');
+function openPopup(popup){ popup.classList.add('popup_open')
+    popName.value = profInfoName.textContent;
+    popText.value = popInfoText.textContent;
 }
 
-function closePopup() {
-    popProf.classList.remove('popup_open');
-}
+function closePopup(popup){popup.classList.remove('popup_open');}
 
-function handlePopupSubmit(event) {
-event.preventDefault();
-profInfoName.textContent = popName.value;
-popInfoText.textContent = popText.value;
-closePopup();
-}
 
-popAddBtn.addEventListener('click', openPopup);
-popBtnClose.addEventListener('click', closePopup);
+popAddBtn.addEventListener('click', () => {
+    openPopup(popProf);
+});
+
+
+popBtnElement.addEventListener('click', () => {
+    openPopup(popElement);
+});
+
+
+popBtnClose.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      closePopup(event.target.closest('.popup'));
+    });
+});
+
+function handlePopupSubmit(evt) { 
+    evt.preventDefault(); 
+    profInfoName.textContent = popName.value; 
+    popInfoText.textContent = popText.value; 
+    closePopup(popProf);  
+} 
+
 popForm.addEventListener('submit', handlePopupSubmit);
 
 
