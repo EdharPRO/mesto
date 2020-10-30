@@ -32,7 +32,7 @@ const popText = document.querySelector('.popup__input_text');
 const popInfoText = document.querySelector('.profile__info-text');
 const popImageText = document.querySelector('.popup__img-text');
 const popForm = document.querySelector('.popup__form');
-const popBtnClose = document.querySelectorAll('.popup__close');
+const popBtnsClose = document.querySelectorAll('.popup__close');
 const popBtnElement = document.querySelector('.profile__button');
 const popProf = document.querySelector('.popup__add-prof');
 const popElement = document.querySelector('.popup__element');
@@ -79,7 +79,7 @@ function createCard(element) {
     let cardElementImage = cardElement.querySelector('.element__image');
 
     cardElement.querySelector('.element__paragraph').textContent = element.name;
-    cardElement.querySelector('.element__image').src = element.link;
+    cardElementImage.src = element.link;
     cardElement.querySelector('.element__icon').addEventListener('click', (event) => {
         event.target.classList.toggle('element__icon_active');
     });
@@ -104,7 +104,7 @@ popBtnElement.addEventListener('click', () => {
     openPopup(popElement);
 });
 
-popBtnClose.forEach((button) => {
+popBtnsClose.forEach((button) => {
     button.addEventListener('click', (event) => {
         closePopup(event.target.closest('.popup'));
     });
@@ -117,5 +117,6 @@ popElement.addEventListener('submit', formSubmitCard);
 initialCards.forEach((element) => {
     secElemCard.append(createCard(element));
 });
+
 
 
