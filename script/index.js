@@ -86,7 +86,7 @@ function createCard(element) {
     cardElement.querySelector('.element__delete').addEventListener('click', (event) => {
         event.target.closest('.element').remove();
     });
-    cardElement.querySelector('.element__image').addEventListener('click', event => {
+    cardElementImage.addEventListener('click', event => {
         hugeImg.src = cardElementImage.src;
         popImageText.textContent = element.name;
         openPopup(popImg);
@@ -117,6 +117,5 @@ popElement.addEventListener('submit', formSubmitCard);
 initialCards.forEach((element) => {
     secElemCard.append(createCard(element));
 });
-
 
 
